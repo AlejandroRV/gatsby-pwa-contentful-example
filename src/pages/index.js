@@ -1,6 +1,6 @@
-import React from "react"
-import Header from "../components/header"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import Header from '../components/header'
+import { useStaticQuery, graphql } from 'gatsby'
 
 export default (props) => {
   const data = useStaticQuery(graphql`

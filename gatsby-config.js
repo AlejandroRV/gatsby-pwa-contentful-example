@@ -10,6 +10,7 @@ module.exports = {
     someData: 'Im the data'
   },
   plugins: [
-    'gatsby-plugin-sass'
-  ]
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet'
+  ],
 }
