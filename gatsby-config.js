@@ -6,4 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    someData: 'Im the data'
+  },
+  plugins: [
+    'gatsby-plugin-sass'
+  ]
 }
