@@ -1,12 +1,13 @@
-import React, { memo } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types'
 import headerStyles from './header.module.scss';
 
 const Header = (props) => {
   return (
     <nav className={headerStyles.nav}>
+      <Helmet title="title" />
       Header
       <ul>
         <li>
