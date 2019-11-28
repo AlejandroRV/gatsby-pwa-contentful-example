@@ -35,10 +35,12 @@ const Layout = ({ title, children }) => {
       <CssBaseline />
       <Header />
       <Container className={classes.cardGrid} maxWidth="md">
-          <Grid container spacing={0}>
+        <Grid container spacing={0} justify="center">
+          <Grid item >
             {children}
           </Grid>
-        </Container>
+        </Grid>
+      </Container>
     </React.Fragment>
   )
 };

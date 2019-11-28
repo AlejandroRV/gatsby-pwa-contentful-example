@@ -14,6 +14,10 @@ const useStyles = makeStyles(theme => ({
   toolbar: {
     flexWrap: 'wrap',
   },
+  toolBarTitleLink: {
+    flexGrow: 1,
+    margin: theme.spacing(1, 1.5),
+  },
   toolbarTitle: {
     flexGrow: 1,
   },
@@ -30,9 +34,11 @@ const Header = () => {
       <CssBaseline />
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Company name
-          </Typography>
+          <Link variant="button" color="textPrimary" href="#" to="/" className={classes.toolBarTitleLink}>
+            <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+              Gatsby PWA
+            </Typography>
+          </Link>
           <nav>
             <Link variant="button" color="textPrimary" href="#" to="/" className={classes.link}>
               Home
