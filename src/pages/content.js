@@ -1,13 +1,11 @@
-import React from 'react'
-import Header from '../components/header';
-import PropTypes from 'prop-types'
+import React from 'react';
+import Layout from '../components/layout';
 
 const Content = props => {
   return (
-    <div>
-      <Header />
-      Some content here
-    </div>
+    <Layout title="content" >
+      <h1>Content page</h1>
+    </Layout>
   )
 }
 

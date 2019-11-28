@@ -1,7 +1,6 @@
-import React from 'react'
-import Header from '../components/header'
-import { useStaticQuery, graphql } from 'gatsby'
-// import '../styles/index.scss';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 export default (props) => {
   const data = useStaticQuery(graphql`
@@ -15,11 +14,10 @@ export default (props) => {
   `);
 
   return (
-    <div>
-      <Header />
-      Hello world!
-      <br />
+    <Layout title="home" >
+      <h1>PWA / contentful example</h1>
+      <div>Hello world! test</div>
       {data.site.siteMetadata.someData}
-    </div>
+    </Layout>
   );
 }
