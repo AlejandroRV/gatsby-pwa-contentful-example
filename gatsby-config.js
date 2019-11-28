@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'PWA/contentful example',
-    someData: 'Im the data'
+    title: 'GATSBY PWA/contentful example',
+    someData: 'Im the METADATA'
   },
   plugins: [
     // sass
@@ -41,6 +41,21 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
-    }
+    },
+    // sourcing local data
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      }
+    },
+    // image processing
+    'gatsby-plugin-sharp',
+    // markdown parser
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {}
+    },
   ]
 }

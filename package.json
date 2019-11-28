@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Example of Gatsby.js as a Progressive web app that pulls data from Contentful",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -24,8 +24,11 @@
     "gatsby-plugin-offline": "^3.0.24",
     "gatsby-plugin-react-helmet": "^3.1.15",
     "gatsby-plugin-sass": "^2.1.23",
+    "gatsby-plugin-sharp": "^2.3.1",
+    "gatsby-source-filesystem": "^2.1.36",
     "gatsby-source-contentful": "2.1.19",
     "gatsby-theme-material-ui": "^1.0.5",
+    "gatsby-transformer-remark": "^2.6.33",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
