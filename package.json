@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-pwa-contentful-example",
   "private": true,
   "description": "Example of Gatsby.js as a Progressive web app that pulls data from Contentful",
   "version": "0.1.0",
@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/AlejandroRV/gatsby-pwa-contentful-example"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/AlejandroRV/gatsby-pwa-contentful-example/issues"
   }
 }
