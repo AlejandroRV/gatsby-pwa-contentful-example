@@ -1,32 +1,53 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet';
-import PropTypes from 'prop-types'
-import headerStyles from './header.module.scss';
+import React from 'react';
+import { Link } from "gatsby-theme-material-ui";
 
-const Header = (props) => {
-  return (
-    <nav className={headerStyles.nav}>
-      <Helmet title="title" />
-      Header
-      <ul>
-        <li>
-          <Link to="/" >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/content">
-            Content
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  )
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+  appBar: {
+    borderBottom: `1px solid ${theme.palette.divider}`,
+  },
+  toolbar: {
+    flexWrap: 'wrap',
+  },
+  toolbarTitle: {
+    flexGrow: 1,
+  },
+  link: {
+    margin: theme.spacing(1, 1.5),
+  }
+}));
+
+const Header = () => {
+  const classes = useStyles();
+
+  return(
+    <React.Fragment>
+      <CssBaseline />
+      <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
+        <Toolbar className={classes.toolbar}>
+          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+            Company name
+          </Typography>
+          <nav>
+            <Link variant="button" color="textPrimary" href="#" to="/" className={classes.link}>
+              Home
+            </Link>
+            <Link variant="button" color="textPrimary" href="#" to="/content" className={classes.link}>
+              Content
+            </Link>
+            <Link variant="button" color="textPrimary" href="#" to="/template" className={classes.link}>
+              Template
+            </Link>
+          </nav>
+        </Toolbar>
+      </AppBar>
+    </React.Fragment>
+  );
 };
 
-Header.propTypes = {
-
-}
-
-export default Header
+export default Header;
