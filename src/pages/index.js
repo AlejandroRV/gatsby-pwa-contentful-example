@@ -22,6 +22,9 @@ export default (props) => {
       </Typography>
       <div>Hello world! test</div>
       {data.site.siteMetadata.someData}
+      <Typography component="h3" variant="h4" align="center" color="textPrimary" gutterBottom>
+        <a href="https://github.com/AlejandroRV/gatsby-pwa-contentful-example">Demo Repository</a>
+      </Typography>
     </Layout>
   );
 }
